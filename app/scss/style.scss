@@ -97,8 +97,16 @@ body {
     font-family: "Montserrat", sans-serif;
     margin: 0 auto;
 }
+h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    color: #000000;
+}
 .header{
     background-color: $background;
+    overflow: hidden;
     &-up{
         display: flex;
         justify-content: space-between;
@@ -169,5 +177,59 @@ body {
     }
     &-routine{
         font-size: 16px;
+    }
+}
+.parallax{
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: clip;
+    background-color: $background;
+    &-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &-label{
+        font-size: 18px;
+        max-width: 621px;
+        margin-top: 18px;
+        // margin: 0 auto;
+        text-align: center;
+    }
+    &-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &-img__black{
+        top: -120px;
+        width: 97%;
+        transform: translate(1.75%, 0%);
+        z-index: 1;
+    }
+    &-img__color{
+        top: -100px;
+        z-index: 2;
+    }
+    &-img__piza{
+        z-index: 5;
+        top: 0;
+        left: 0;
+        transform: translate(15%, 20%);
+        width: 85%;
+    }
+    &-img__flour{
+        z-index: 1;
+        mix-blend-mode: screen;
+        top: 35%;
+        left: 22%;
+        transform: translate(-42%, -32%);
+
     }
 }
