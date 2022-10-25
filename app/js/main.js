@@ -16,7 +16,8 @@ const parallaxY = () =>{
         let value = window.scrollY;
         vegitableBlack.style.left = value * 0.15 + 'px'
         vegitableColor.style.left = -value * 0.15 + 'px'
-        pizza.style.top = value  * 0.025 + 'px'
+        pizza.style.top = value  * 0.10 + 'px'
+        // flour.style.top = -value  * 0.20 + 'px' переписать положение , вывести в 0 топ и лефт и преносить с помощью трансфом
         title.style.marginRight = value  * 1.05 + 'px'
         text.style.marginRight = -value * 1.05  + 'px'
     })

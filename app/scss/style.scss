@@ -104,6 +104,12 @@ h1{
     text-align: center;
     color: #000000;
 }
+h2{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
 .header{
     background-color: $background;
     overflow: hidden;
@@ -111,6 +117,8 @@ h1{
         display: flex;
         justify-content: space-between;
         margin: 0 140px;
+        position: relative;
+        z-index: 10;
     }
 }
 .nav{
@@ -186,6 +194,7 @@ h1{
     min-height: 100vh;
     overflow-x: clip;
     background-color: $background;
+    margin-bottom: 130px;
     &-container{
         display: flex;
         flex-direction: column;
@@ -196,7 +205,6 @@ h1{
         font-size: 18px;
         max-width: 621px;
         margin-top: 18px;
-        // margin: 0 auto;
         text-align: center;
     }
     &-img{
@@ -231,5 +239,107 @@ h1{
         left: 22%;
         transform: translate(-42%, -32%);
 
+    }
+}
+.menu{
+    padding-top: 100px;
+    &-title{
+        margin-bottom: 50px;
+    }
+    &-tab{
+        margin-bottom: 50px;
+    }
+}
+.tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__btn{
+        padding: 0 15px;
+    }
+    &__btn-item{
+        width: 135px;
+        height: 55px;
+        background: rgba(236, 238, 246, 1);
+        border-radius: 45px;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(21, 21, 21, 1);
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    &__btn-item:hover{
+        color: #FFF;
+        background: rgba(89, 170, 241, 0.5);
+    }
+    &__btn-item.active{
+        color: #FFF;
+        background: rgba(89, 170, 241, 1);
+    }
+}
+
+.card{
+    width: 260px;
+    height: 415px;
+    &-food{
+        height: 100%;
+        background-image: url(../images/card-food/back.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &-information{
+        position: relative;
+    }
+    &-food__img{
+        margin-top: 36px;
+        margin-left:  23px ;
+
+    }
+    &-food__detail{
+        margin-left: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-food__size{
+        margin-right: 15px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+    }
+    &-food__description{
+        max-width: 220px;
+        margin: 8px 15px 19px 25px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+    }
+    &-food__price{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 140%;
+        color: #121146;
+        margin: 0 83px;
+    }
+    &-food__order{
+        position: absolute;
+        top: 102%;
+        left: 43%;    
+        width: 33px;
+        height: 33px;
+        background: #fff;
+        border-radius: 59px;
+        cursor: pointer;
+        border: 2px solid #ECEEF6;
+        fill: rgba(242, 63, 14, 0.8);
+        padding: 6px 10px 11px 9px;
+        transition: all 1s ease-in-out 0.1s;
+
+    }
+    &-food__order:hover{
+        fill: #FFFFFF;
+        background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%), linear-gradient(180deg, #FE5626 0%, #F23F0E 100%);
+        box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
     }
 }
