@@ -206,6 +206,7 @@ h2{
         max-width: 621px;
         margin-top: 18px;
         text-align: center;
+        line-height: 25px;
     }
     &-img{
         position: absolute;
@@ -235,9 +236,9 @@ h2{
     &-img__flour{
         z-index: 1;
         mix-blend-mode: screen;
-        top: 35%;
-        left: 22%;
-        transform: translate(-42%, -32%);
+        top: 0;
+        left: 0;
+        transform: translate(-20%, 5%);
 
     }
 }
@@ -485,13 +486,9 @@ h2{
     text-align: center;
     padding-top: 82px;
     background-color: $background;
+    overflow: hidden;
     &-up{
         position: relative;
-        z-index: 3;
-        background-image: url(../images/background/vegitablefooter.png);
-        background-position: 0 0;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     &-down{
         background-color: #FFF;
@@ -499,6 +496,7 @@ h2{
     &-title{
         line-height: 72px;
         max-width: 500px;
+        display: flex;
         margin: 0 auto;
         margin-bottom: 42px;
     }
@@ -515,6 +513,17 @@ h2{
         line-height: 140%;
         color: $textcolor;
 
+    }
+    &-img__vf{
+        transform: translate(0, 78%);
+        z-index: 2;
+
+    }
+    &-img__icon{
+        transform: translate(0, -87%);
+        z-index: 1;
+        width: 96%;
+        
     }
 }
 .contact{

@@ -29,19 +29,19 @@ function cleanDist() {
 
 function images(){
     return src('app/images/**/*')
-    // .pipe(imagemin(
-    //     [
-    //         imagemin.gifsicle({interlaced: true}),
-    //         imagemin.mozjpeg({quality: 75, progressive: true}),
-    //         imagemin.optipng({optimizationLevel: 5}),
-    //         imagemin.svgo({
-    //             plugins: [
-    //                 {removeViewBox: true},
-    //                 {cleanupIDs: false}
-    //             ]
-    //         })
-    //     ]
-    // ))
+    .pipe(imagemin(
+        [
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.mozjpeg({quality: 75, progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]
+    ))
     .pipe(dest('dist/images'))
 }
 
@@ -51,7 +51,7 @@ function images(){
 
 function scripts(){
     return src([
-        'node_modules/jquery/dist/jquery.js',
+        // 'node_modules/jquery/dist/jquery.js',Пример как подключать библиотеки
         'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))

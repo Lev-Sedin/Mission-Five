@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mission-Five</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -13,8 +13,8 @@
         <div class="header-up">
             <nav class="nav">
                 <a href="#" class="nav-item">Payment</a>
-                <a href="#" class="nav-item">About us</a>
-                <a href="#" class="nav-item">Contacts</a>
+                <a href="#social" class="nav-item">About us</a>
+                <a href="#contact" class="nav-item">Contacts</a>
             </nav>
             <div class="logo"><img src="images/logo/logos 1.svg" alt="logo"></div>
             <div class="contacts">
@@ -282,14 +282,13 @@
             <button class="menu-more__btn"><img class="menu-more__icon"src="images/icons/more.svg" alt=""> </button>
         </div>
     </div>
-    <div class="social">
+    <div class="social" id="social">
         <div class="social-body">
             <div class="social-photo">
                 <div class="social-box__big">
                     <div class="social-box__small"><p href="#" class="social-box__title"> Instagram:  <a class="social-box__link" href="#">@classic_kovel</a></p></div>
                 </div>
                 <img class="social-photo__item social-photo__big" src="images/photo/photo1.jpg" alt="">
-                <!-- <img class="social-photo__item social-photo__small" src="images/photo/photo1v.jpg" alt=""> -->
                 <img class="social-photo__item" src="images/photo/photo2.jpg" alt="">
                 <img class="social-photo__item" src="images/photo/photo3.jpg" alt="">
                 <img class="social-photo__item" src="images/photo/photo4.jpg" alt="">
@@ -297,14 +296,34 @@
                 <img class="social-photo__item social-photo__big" src="images/photo/photo6.jpg" alt="">
                 <img class="social-photo__item social-photo__small" src="images/photo/photo2v.jpg" alt="">
             </div>
-            <!-- <div class="social-box__big">
-                <div class="social-box__small"><p href="#" class="social-box__title"> Instagram:  <a class="social-box__link" href="#">@classic_kovel</a></p></div>
-            </div> -->
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer-up">
+            <h1 class="footer-title">Fill out the form and we will call you</h1>
+            <img class="parallax-img footer-img__vf" id="vf" src="images/background/vegitablefooter.png" alt="">
+            <img class="parallax-img  footer-img__icon" id="icon" src="images/background/icons.png" alt="">
+            <div class="contact">
+                <form class="contact-box" id="contact">
+                    <input class="contact-item contact-item__value" type="text" placeholder="Your name" name="text" required>
+                    <input class="contact-item contact-item__value" type="tel" placeholder="Phone number" name="tel"required>
+                    <button class="contact-item contact-item__btn" type="submit" value="Сall back">Сall back<img  class="contact-item__icon" src="images/icons/arrow.svg" alt=""></button>
+                </form>
+            </div>
+            <div class="contact-img" id="car"></div>
+        </div>
+        <div class="footer-down">
+            <div class="footer-content">
+                <p class="footer-info">© Classic Family Restaurant</p>
+                <img src="images/logo/logos 1.svg" alt="">
+                <p class="footer-info">Made with delight by <b>harmuder</b></p>
+            </div>
+        </div>
+    </footer>
     
     
     <script src="js/main.min.js"></script>
-    <script src="js/test.js"></script>
+    <script src="js/scrol.js"></script>
+    <script src="js/paralax.js"></script>
 </body>
 </html>
