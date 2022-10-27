@@ -9,6 +9,7 @@ const parallaxY = () =>{
     let flour = document.getElementById("flour");
     let title = document.getElementById("title");
     let text = document.getElementById("text")
+    let car = document.getElementById("car");
 
 
 
@@ -20,6 +21,7 @@ const parallaxY = () =>{
         // flour.style.top = -value  * 0.20 + 'px' переписать положение , вывести в 0 топ и лефт и преносить с помощью трансфом
         title.style.marginRight = value  * 1.05 + 'px'
         text.style.marginRight = -value * 1.05  + 'px'
+        car.style.left = -value* 0.5 + 'px'
     })
 }
 

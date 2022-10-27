@@ -422,6 +422,7 @@ h2{
     }
 }
 .social{
+    margin-bottom: 128px;
     &-body{
         position: relative;
     }
@@ -450,8 +451,8 @@ h2{
         border-radius: 15px;
         margin: 0 auto;
         position: absolute;
-        top: 25%;
-        left: 35%;
+        top: 20%;
+        left: 34%;
     }
     &-box__small{
         width: 440px;
@@ -477,6 +478,95 @@ h2{
     }
     &-box__link:hover{
         opacity: $opacity;
+    }
+}
+
+.footer{
+    text-align: center;
+    padding-top: 82px;
+    background-color: $background;
+    &-up{
+        position: relative;
+        z-index: 3;
+        background-image: url(../images/background/vegitablefooter.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &-down{
+        background-color: #FFF;
+    }
+    &-title{
+        line-height: 72px;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 42px;
+    }
+    &-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 35px 0;
+    }
+    &-info{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: $textcolor;
+
+    }
+}
+.contact{
+    &-box{
+        display: flex;
+        justify-content: center;
+    }
+    &-item{
+        width: 260px;
+        height: 60px;
+        border-radius: 59px;
+        margin: 0 20px;
+    }
+    &-item:first-child{
+        margin-left: 5px;
+    }
+    &-item:last-child{
+        margin-right: 5px;
+    }
+    &-item__value{
+        background: #FFFFFF;
+        border: 2px solid #ECEEF7;
+        color: $textcolor;
+        font-size: 14px;
+        padding: 20px 30px;
+    }
+    &-item__btn{
+        background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1;
+        box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &-item__icon{
+        margin-left: 12%;
+        margin-top: 5px;
+    }
+    &-img{
+        background-image: url(https://s3-alpha-sig.figma.com/img/5a52/6943/c4aa8d5ad32c0e07e89a61cf43e94218?Expires=1667779200&Signature=JMEhV5dGQg7jkwHKEjkp9zj9qu2DT9FkrxnNZAIRrofbFfDl1SSwAZG2a-Xpa-XXHkSznQnZDcyGvDUR~tE6eWdNz08PXl4I32xG~yaNafE2lJ1jB-T5bNL-D7rFsy4ilOU-5QPW19Pe-AHmcs4PuEAJ3Bfp4a~ftBbz1d9RagAm4mJ8ICVYaNt6QibMOyBkTYTRlzDWp3FEp7UP~C1Lmyf0AbEG-y1pSCSaF4-WGTeSrWCbumLfWhugj2f6sczxVN1BRrFXuBcY3A0NE1-JEHwKnL8apk5oxXc17Kf-RYNPVctC72270~nLC5B8Y6WiJ7mkV93q2LTr-8mem8HL-g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 315px;
+        width: 654px;
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+        left: 0;
+        transform: translate(1400px, 0%);
+
     }
 }
 
