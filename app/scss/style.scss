@@ -323,7 +323,7 @@ h2{
     &-food{
         height: 100%;
         background-image: url(../images/card-food/back.png);
-        background-position: 0 0;
+        background-position: 0 20%;
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -422,6 +422,25 @@ h2{
     }
 }
 .social{
+    &-body{
+        position: relative;
+    }
+
+    &-photo{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    &-photo__item{
+        margin: 0 5px;
+    }
+    &-photo__small{
+        display: none;
+    }
+    &-photo__big{
+        margin: 0 0;
+    }
 
     &-box__big{
         width: 480px;
@@ -430,7 +449,9 @@ h2{
         box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2);
         border-radius: 15px;
         margin: 0 auto;
-        position: relative;
+        position: absolute;
+        top: 25%;
+        left: 35%;
     }
     &-box__small{
         width: 440px;
@@ -457,4 +478,34 @@ h2{
     &-box__link:hover{
         opacity: $opacity;
     }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1290px){
+    .social{
+        &-photo{
+            justify-content: center;
+        }
+        &-photo__item{
+            margin: 5px 5px;
+        }
+        &-photo__small{
+            display: block;
+        }
+        &-photo__big{
+            display: none;
+        }
+        &-photo__item:last-child,&-photo__item:first-child{
+            margin: 5px 5px;
+        }
+        &-box__big{
+            left: 31%;
+        }
+    }
+
 }
