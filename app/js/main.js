@@ -19,7 +19,7 @@ const parallaxY = () =>{
         flour.style.top = -value  * 0.10 + 'px'
         title.style.marginRight = value  * 1.05 + 'px'
         text.style.marginRight = -value * 1.05  + 'px'
-        car.style.left = -value* 0.49 + 'px'
+        car.style.left = -value/5* 0.7 + 'px'
         vf.style.top = -value/1.5 * 0.20 + 'px'
         icon.style.top = value * 0.20 + 'px'
     })

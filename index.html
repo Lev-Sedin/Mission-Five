@@ -11,21 +11,42 @@
 <body>
     <header class="header">
         <div class="header-up">
-            <nav class="nav">
-                <a href="#" class="nav-item">Payment</a>
-                <a href="#social" class="nav-item">About us</a>
-                <a href="#contact" class="nav-item">Contacts</a>
-            </nav>
-            <div class="logo"><img src="images/logo/logos 1.svg" alt="logo"></div>
-            <div class="contacts">
-                <div class="daily">
-                    <span class="daily-circle"></span>
-                    <span class="daily-routine">Daily 11am - 9pm</span>
+            <div class="navbar">
+                <nav class="nav">
+                    <a href="#" class="nav-item">Payment</a>
+                    <a href="#social" class="nav-item">About us</a>
+                    <a href="#contact" class="nav-item">Contacts</a>
+                </nav>
+                <div class="logo"><img src="images/logo/logos 1.svg" alt="logo"></div>
+                <div class="contacts">
+                    <div class="daily">
+                        <span class="daily-circle"></span>
+                        <span class="daily-routine">Daily 11am - 9pm</span>
+                    </div>
+                    <div class="contacts-phone">
+                        <div class="icon"><img class="icon-images" src="images/icons/phone.svg" alt="phone"></div>
+                        <a class="contacts-phone__number" href="tel:+0 800 33 08 98">0 800 33 08 98</a>
+                    </div>
                 </div>
-                <div class="contacts-phone">
-                    <div class="icon"><img class="icon-images" src="images/icons/phone.svg" alt="phone"></div>
-                    <a class="contacts-phone__number" href="tel:+0 800 33 08 98">0 800 33 08 98</a>
+            </div>
+            <div class="mobile">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span class="menu-span"></span>
+                    </label>
+                    <ul class="menu__box">
+                      <a class="nav-item menu__item" href="#">Payment</a>
+                      <a class="nav-item menu__item" href="#social">About us</a>
+                      <a class="nav-item menu__item" href="#contact">Contacts</a>
+                      <span class=" menu__item daily-routine">Daily <b> 11am - 9pm</b></span>
+                    <div class="contacts-phone">
+                        <div class="icon"><img class="icon-images" src="images/icons/phone.svg" alt="phone"></div>
+                        <a class="contacts-phone__number" href="tel:+0 800 33 08 98">0 800 33 08 98</a>
+                    </div>
+                    </ul>
                 </div>
+                <div class="logo"><img src="images/logo/logos 1.svg" alt="logo"></div>
             </div>
         </div>
     </header>
@@ -315,7 +336,7 @@
         <div class="footer-down">
             <div class="footer-content">
                 <p class="footer-info">© Classic Family Restaurant</p>
-                <img src="images/logo/logos 1.svg" alt="">
+                <img class="footer-content__img" src="images/logo/logos 1.svg" alt="">
                 <p class="footer-info">Made with delight by <b>harmuder</b></p>
             </div>
         </div>
