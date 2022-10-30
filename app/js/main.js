@@ -4,7 +4,6 @@ const parallaxY = () =>{
     let pizza = document.getElementById("pizza");
     let flour = document.getElementById("flour");
     let title = document.getElementById("title");
-    let text = document.getElementById("text")
     let car = document.getElementById("car");
     let vf = document.getElementById("vf")
     let icon = document.getElementById("icon")
@@ -17,8 +16,7 @@ const parallaxY = () =>{
         vegitableColor.style.left = -value * 0.15 + 'px'
         pizza.style.top = value  * 0.10 + 'px'
         flour.style.top = -value  * 0.10 + 'px'
-        title.style.marginRight = value  * 1.05 + 'px'
-        text.style.marginRight = -value * 1.05  + 'px'
+        title.style.marginTop = -value  * 0.50 + 'px'
         car.style.left = -value/5* 0.7 + 'px'
         vf.style.top = -value/1.5 * 0.20 + 'px'
         icon.style.top = value * 0.20 + 'px'
