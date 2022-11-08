@@ -329,6 +329,68 @@ h2{
 
     }
 }
+.shopping{
+    position: absolute;
+    width: 308px;
+    height: 160px;
+    right: 15px;
+    top: -100px;
+    &-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        margin-top: 50px;
+    }
+    &-price{
+        position: relative;
+        width: 80px;
+        height: 37px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 5px;
+        margin-right: 15px;
+        text-align: center;
+        padding: 10px;
+        font-weight: 700;
+    }
+    &-price::after{
+        content: ''; 
+        position: absolute;
+        right: -19px; 
+        top: 8px;
+        border: 10px solid transparent;
+        border-left: 9px solid #000;
+    }
+    &-bag{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: #F0F5FB;
+        border: 2px solid #ECEEF6;
+        border-radius: 50%;
+    }
+    &-bag__icon{
+        position: absolute;
+        top: -3px;
+        left: 22%;
+        width: 25px;
+        height: 100%;
+    }
+    &-bag__circle{
+        position: absolute;
+        bottom: -8px;
+        right: -3px;    
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #F58656;
+        color: #fff;
+        text-align: center;
+        padding: 2px;
+    }
+
+}
 .menu{
     margin-top: 300px;
     position: relative;
@@ -462,12 +524,17 @@ h2{
         font-size: 12px;
         line-height: 140%;
     }
-    &-food__price{
+    &-price{
+        display: flex;
+        align-items: center;
         font-weight: 300;
         font-size: 24px;
         line-height: 140%;
         color: #121146;
-        margin: 0 83px;
+        justify-content: center;
+    }
+    &-food__price{
+        margin-right: 8px;
     }
     &-food__order{
         position: absolute;
@@ -656,7 +723,7 @@ h2{
         margin-top: 5px;
     }
     &-img{
-        background-image: url(https://s3-alpha-sig.figma.com/img/5a52/6943/c4aa8d5ad32c0e07e89a61cf43e94218?Expires=1667779200&Signature=JMEhV5dGQg7jkwHKEjkp9zj9qu2DT9FkrxnNZAIRrofbFfDl1SSwAZG2a-Xpa-XXHkSznQnZDcyGvDUR~tE6eWdNz08PXl4I32xG~yaNafE2lJ1jB-T5bNL-D7rFsy4ilOU-5QPW19Pe-AHmcs4PuEAJ3Bfp4a~ftBbz1d9RagAm4mJ8ICVYaNt6QibMOyBkTYTRlzDWp3FEp7UP~C1Lmyf0AbEG-y1pSCSaF4-WGTeSrWCbumLfWhugj2f6sczxVN1BRrFXuBcY3A0NE1-JEHwKnL8apk5oxXc17Kf-RYNPVctC72270~nLC5B8Y6WiJ7mkV93q2LTr-8mem8HL-g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+        background-image: url(../images/background/car.png);
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: cover;
@@ -701,11 +768,6 @@ h2{
 
 }
 @media screen and (max-width: 1221px){
-    // .contact{
-    //     &-img{
-    //         transform: translate(1586px, 0%);
-    //     }
-    // }
     .footer{
         &-img__vf{
             transform: translate(0, 90%);
@@ -825,10 +887,10 @@ h2{
     }
     .footer{
         &-img__vf{
-            transform: translate(0, 88%);
+            transform: translate(0, 100%);
         }
         &-img__icon{
-            transform: translate(0, -122%);
+            transform: translate(0, -106%);
         }
     }
     .menu{
@@ -875,6 +937,7 @@ h2{
     .contact{
         &-img{
             transform: translate(900px, -6%);
+            width: 400px;
         }
     }
     h1{
@@ -945,22 +1008,22 @@ h2{
     }
     .footer{
         &-img__vf{
-            transform: translate(0, 175%);
+            transform: translate(0, 176%);
         }
         &-img__icon{
-            transform: translate(0, -214%);
+            transform: translate(0, -208%);
         }
     }
 }
 @media screen and (max-width: 410px){
-    .footer{
-        &-img__vf{
-            transform: translate(0, 167%);
-        }
-        &-img__icon{
-            transform: translate(0, -185%);
-        }
-    }
+    // .footer{
+    //     &-img__vf{
+    //         transform: translate(0, 167%);
+    //     }
+    //     &-img__icon{
+    //         transform: translate(0, -185%);
+    //     }
+    // }
 }
 @media screen and (max-width: 404px){
     .footer{
@@ -989,10 +1052,10 @@ h2{
     }
     .footer{
         &-img__vf{
-            transform: translate(0, 190%);
+            transform: translate(0, 187%);
         }
         &-img__icon{
-            transform: translate(0, -223%);
+            transform: translate(0, -226%);
         }
     }
 }
@@ -1014,10 +1077,10 @@ h2{
     }
     .footer{
         &-img__vf{
-            transform: translate(0, 198%);
+            transform: translate(0, 195%);
         }
         &-img__icon{
-            transform: translate(0, -224%);
+            transform: translate(0, -227%);
         }
     }
 }

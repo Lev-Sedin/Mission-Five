@@ -28,7 +28,6 @@ parallaxY() //паралакс
 const scrollHeader = () =>{
 
     const scrol = document.querySelectorAll('.nav-item')
-    console.log(scrol)
     
     for(let anchor of scrol){
        anchor.addEventListener('click',function(event){
@@ -44,3 +43,18 @@ const scrollHeader = () =>{
  
 }
 scrollHeader() // скрол от навигации
+const counterFunc = () =>{
+    const counterUp = document.querySelectorAll(".card-food__order")
+    const counterPrice = document.querySelectorAll(".card-food__price")
+    const counterPage = document.querySelector(".shopping-bag__circle")
+    const finallyPrice = document.querySelector(".shopping-price")
+    console.log(counterPrice)
+    counterUp.forEach(button =>{
+        button.addEventListener("click", (countUp));
+        function countUp(){
+            counterPage.innerHTML ++
+            finallyPrice.innerHTML = "= " + 119 * counterPage.innerHTML +" ₴"
+        }
+    } )
+}
+counterFunc()
